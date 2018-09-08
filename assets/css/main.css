@@ -1,3 +1,16 @@
+h2 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+ } 
+ 
+ h2 span { 
+     background:#fff; 
+     padding:0 10px; 
+ }
+
 /* banner styles */
 
 #banner {
@@ -789,10 +802,44 @@
             padding:0.5%;
           }
           .green {
-            background:#66dd99;
+            /* background:#66dd99; */
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgv89H1bWkRl0P1mlbME4QLNp8zs1mfHWYlCDzvgWuGk8sLQqsow);
+            background-size: cover;
           }
           .blue {
-            background:#6666ff;
+            /* background:#6666ff; */
+            background-image: url(http://pluspng.com/img-png/clothes-png-hd-dress-shirt-png-hd-png-image-480.png);
+            background-size: cover;
           }
           .red {
-            background:#ff4466;
+            /* background:#ff4466; */
+            background-image: url(http://www.transparentpng.com/download/clothes/KaU7ZT-blue-women-dress-clothes-hd-image.png);
+            background-size: cover;
+
+          }
+
+
+
+		#banner .more {
+			background-image: url("images/arrow.svg");
+			background-position: center 1.35em;
+			background-repeat: no-repeat;
+			background-size: auto;
+			border: 1px solid #fff;
+			border-radius: 100%;
+			color: rgba(255, 255, 255, 0.75);
+			display: block;
+			height: 4em;
+			text-indent: 4em;
+			overflow: hidden;
+			white-space: nowrap;
+			width: 4em;
+			z-index: 2;
+			margin: 0 auto 2em auto;
+		}
+
+			#banner .more:hover {
+				background-color: rgba(255, 255, 255, 0.05);
+				border: 1px solid #fff;
+				color: #FFF;
+			}
