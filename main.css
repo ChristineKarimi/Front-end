@@ -1,0 +1,35 @@
+.part1{
+    background-image: url(assets/backgrounds/hero.jpg);
+  }
+  nav {
+      -webkit-box-shadow: none!important;
+      -moz-box-shadow: none!important;
+      box-shadow: none!important;
+  }
+  p {
+    color: white;
+  }
+  h1 {
+  color: white;
+  }
+  .image {
+  background-image: url(assets/products/tshirt.png);
+  }
+  .section4 {
+  background-image:url(assets/backgrounds/about.jpg);
+  padding: 125px;
+  }
+  .about{
+  border-style: solid;
+    border-width: 1px;
+  }
+  .section6{
+  text-align: center;
+  padding: 20px;
+  }
+  .section3{
+  background-color: rgba(195,131,76);
+  }
+
+  
+  
