@@ -1,288 +1,415 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>yolomi</title>
-  <!-- <link rel="stylesheet" href="main.css"> -->
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="animate.css">
 
   <link rel="stylesheet" href="bootstrap.min.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
 </head>
-<!-- this is the beginning of the navbar-->
+
+<!--  NAVBAR SECTION-->
+
 <body>
   <div class="part1" style="margin-bottom: -7%; padding-bottom: 18%;">
     <div class="divider"></div>
-    <nav style="background-color: transparent;" >
+    <nav style="background-color: transparent;">
       <div class="nav-wrapper">
         <a href="index.html" class="brand-logo">Yolomy</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="product.html">Products</a></li>
-          <li><a href="cart.html" class="active"><i class="fa fa-shopping-cart"></i> </a></li>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="product.html">Products</a>
+          </li>
+          <li>
+            <a href="cart.html" class="active">
+              <i class="fa fa-shopping-cart"></i>
+            </a>
+          </li>
 
         </ul>
       </div>
     </nav>
-    <!-- this is the beginning of section 1-->
+
+
+    <!-- HEADER SECTION-->
+
     <div class="section" style="padding-top: 10%">
       <h1 align="center" style="color:aliceblue">Our clothing , your comfort</h1>
-      <p align="center" >We understand that you need to look good and feel great.</p>
-      <p align="center" >It all starts with what you are wearing.</p>
+      <p align="center">We understand that you need to look good and feel great.</p>
+      <p align="center">It all starts with what you are wearing.</p>
     </div>
   </div>
 
- <center> <a href="#main" class="more"><i class="fa fa-arrow-down" style="color:white; font-size:300%; align:center"></i></center>
+  <center>
+    <a href="#main" class="more">
+      <i class="fa fa-arrow-down" style="color:white; font-size:300%; align:center"></i>
+  </center>
   </a>
-					</div>
-        </section>
-        <div class="section">
-            <div class="section 2" style="margin-top: -3%;">
-              <div class="card-panel  grey">
-                <div class="row">
-                  <form action="#">
-                    <p>
-                      <div class="col s6">
-                        <input type="checkbox" id="test5" />
-                        <label for="test5"><span class="black-text text-darken-2">Men</label></span>
-                        <input type="checkbox" id="test5" />
-                        <label for="test5"><span class="black-text text-darken-2">Women</label></span>
-                        <input type="checkbox" id="test5" />
-                        <label for="test5"><span class="black-text text-darken-2">Children</label></span>
+  </div>
+  </section>
+  <div class="section">
+    <div class="section 2" style="margin-top: -3%;">
+      <div class="card-panel  grey">
+        <div class="row">
+          <form action="#">
+            <p>
+              <div class="col s6">
+                <input type="checkbox" id="men" onclick="myFunction()">
+                <label for="men">
+                  <span class="black-text text-darken-2">Men</label>
+                </span>
+
+                <input type="checkbox" id="women" onclick="myFunction()">
+                <label for="women">
+                  <span class="black-text text-darken-2">women</label>
+                </span>
+
+                <input type="checkbox" id="children" onclick="myFunction()">
+                <label for="children">
+                  <span class="black-text text-darken-2">Children</label>
+                </span>
+
+              </div>
+              <div class="col s6 " align="right" id="btn">
+                <button onclick="myFunction()">See All Products</button>
+
+              </div>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- MAIN PART CONTAINING PRODUCTS -->
+
+    <div id="main">
+      <section>
+        <div class="container" style="    padding-top: 4%;">
+          <div class="row" style="margin-left: -25.75rem;
+          width: 154%;">
+            <div class="col-sm-3">
+              <div class="left-sidebar">
+
+              </div>
+            </div>
+
+            <!-- MENS SECTION -->
+
+            <div id="menclothes" style="display:none">
+              <div class="col-sm-9 padding-right">
+
+                <h2 class="title text-left">Men</h2>
+                <hr>
+                <div class="col-sm-4">
+                  <div class="product-image-wrapper">
+                    <div class="single-products">
+                      <div class="productinfo text-center">
+                        <img src="images/home/product6.jpg" alt="" />
                       </div>
-                      <div class="col s6 " align="right">
-                        <a class="waves-effect waves-light btn"; "left"; >See all products</a>
+                      <div class="product-overlay">
+                        <div class="overlay-content">
+                          <h2>$56</h2>
+                          <p>sizes</p>
+                          <a href="#" class="btn btn-default add-to-cart">
+                            <i class="fa fa-shopping-cart"></i>
+                          </a>
+                        </div>
                       </div>
-                    </p>
-                  </form>
+                    </div>
+                    <div class="choose">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="product-image-wrapper">
+                    <div class="single-products">
+                      <div class="productinfo text-center">
+                        <img src="images/home/product5.jpg" alt="" />
+
+                      </div>
+                      <div class="product-overlay">
+                        <div class="overlay-content">
+                          <h2>$56</h2>
+                          <p>sizes</p>
+                          <a href="#" class="btn btn-default add-to-cart">
+                            <i class="fa fa-shopping-cart"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="product-image-wrapper">
+                    <div class="single-products">
+                      <div class="productinfo text-center">
+                        <img src="images/home/product6.jpg" alt="" />
+
+                      </div>
+                      <div class="product-overlay">
+                        <div class="overlay-content">
+                          <h2>$56</h2>
+                          <p>sizes</p>
+                          <a href="#" class="btn btn-default add-to-cart">
+                            <i class="fa fa-shopping-cart"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
               </div>
             </div>
-       
+          </div>
 
-			<!-- Main -->
-				<div id="main">
-            <section>
-                <div class="container" style="    padding-top: 4%;">
-                  <div class="row" style="margin-left: -32.75rem;
-                  width: 170%;">
-                    <div class="col-sm-3">
-                      <div class="left-sidebar">
-                     
+
+          <!-- WOMEN SECTION -->
+
+          <div id="womenclothes" style="display:none">
+            <div class="row" style="margin-left: -2.75rem;
+            width: 114%;">
+              <h2 class="title text-right"> Women</h2>
+            <hr>
+              <div class="col-sm-4">
+                <div class="product-image-wrapper">
+                  <div class="single-products">
+                    <div class="productinfo text-center">
+                      <img src="images/home/tshirt_ladies.png" alt="" />
+
+                    </div>
+                    <div class="product-overlay">
+                      <div class="overlay-content">
+                        <h2>$56</h2>
+                        <p>sizes</p>
+                        <a href="#" class="btn btn-default add-to-cart">
+                          <i class="fa fa-shopping-cart"></i>
+                        </a>
                       </div>
                     </div>
-                    
-                    <div class="col-sm-9 padding-right">
+                  </div>
 
-                        <h2 class="title text-center">Men</h2>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="product-image-wrapper">
+                  <div class="single-products">
+                    <div class="productinfo text-center">
+                      <img src="images/home/giacket.png" alt="" />
 
-                        <div class="col-sm-4">
-                          <div class="product-image-wrapper">
-                            <div class="single-products">
-                              <div class="productinfo text-center">
-                                <img src="images/home/product4.jpg" alt="" />
-                              </div>
-                              <div class="product-overlay">
-                                <div class="overlay-content">
-                                  <h2>$56</h2>
-                                  <p>sizes</p>
-                                  <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i></a>
-                                </div>
-                              </div>
-                              <img src="images/home/new.png" class="new" alt="" />
-                            </div>
-                            <div class="choose">
-                              
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-4">
-                          <div class="product-image-wrapper">
-                            <div class="single-products">
-                              <div class="productinfo text-center">
-                                <img src="images/home/product5.jpg" alt="" />
-                                
-                              </div>
-                              <div class="product-overlay">
-                                <div class="overlay-content">
-                                  <h2>$56</h2>
-                                  <p>sizes</p>
-                                  <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i></a>
-                                </div>
-                              </div>
-                              <img src="images/home/sale.png" class="new" alt="" />
-                            </div>
-                            
-                          </div>
-                        </div>
-                        <div class="col-sm-4">
-                          <div class="product-image-wrapper">
-                            <div class="single-products">
-                              <div class="productinfo text-center">
-                                <img src="images/home/product6.jpg" alt="" />
-                               
-                              </div>
-                              <div class="product-overlay">
-                                <div class="overlay-content">
-                                  <h2>$56</h2>
-                                  <p>sizes</p>
-                                  <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i></a>
-                                </div>
-                              </div>
-                            </div>
-                           
-                          </div>
-                        </div>
-                        </div>
-                        </div>
-
-                        <div class="row" style="margin-left: -7.75rem;
-                        width: 125%;">
-                        <h2 class="title text-center">Women</h2>
-
-                        <div class="col-sm-4">
-                          <div class="product-image-wrapper">
-                            <div class="single-products">
-                              <div class="productinfo text-center">
-                                <img src="images/home/product4.jpg" alt="" />
-                              
-                              </div>
-                              <div class="product-overlay">
-                                <div class="overlay-content">
-                                  <h2>$56</h2>
-                                  <p>sizes</p>
-                                  <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i></a>
-                                </div>
-                              </div>
-                              <img src="images/home/new.png" class="new" alt="" />
-                            </div>
-                           
-                          </div>
-                        </div>
-                        <div class="col-sm-4">
-                          <div class="product-image-wrapper">
-                            <div class="single-products">
-                              <div class="productinfo text-center">
-                                <img src="images/home/product5.jpg" alt="" />
-                                
-                              </div>
-                              <div class="product-overlay">
-                                <div class="overlay-content">
-                                  <h2>$56</h2>
-                                  <p>sizes</p>
-                                  <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i></a>
-                                </div>
-                              </div>
-                              <img src="images/home/sale.png" class="new" alt="" />
-                            </div>
-                            
-                          </div>
-                        </div>
-                        <div class="col-sm-4">
-                          <div class="product-image-wrapper">
-                            <div class="single-products">
-                              <div class="productinfo text-center">
-                                <img src="images/home/product6.jpg" alt="" />
-                                
-                              </div>
-                              <div class="product-overlay">
-                                <div class="overlay-content">
-                                  <h2>$56</h2>
-                                  <p>sizes</p>
-                                  <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i></a>
-                                </div>
-                              </div>
-                            </div>
-                            
-                          </div>
-                        </div>
-                        
-                      </div><!--features_items-->
                     </div>
+                    <div class="product-overlay">
+                      <div class="overlay-content">
+                        <h2>$56</h2>
+                        <p>sizes</p>
+                        <a href="#" class="btn btn-default add-to-cart">
+                          <i class="fa fa-shopping-cart"></i>
+                        </a>
+                      </div>
                     </div>
                   </div>
-  
+
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="product-image-wrapper">
+                  <div class="single-products">
+                    <div class="productinfo text-center">
+                      <img src="images/home/product6.jpg" alt="" />
+
+                    </div>
+                    <div class="product-overlay">
+                      <div class="overlay-content">
+                        <h2>$56</h2>
+                        <p>sizes</p>
+                        <a href="#" class="btn btn-default add-to-cart">
+                          <i class="fa fa-shopping-cart"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
 
 
-<!-- this is the beginning of section 4 -->
-<div class="section">
- <div class="section4" style="background-image:url(assets/backgrounds/about.jpg); background-size:cover; padding: 125px; width: 148%;margin-left: -24%;">
-   <div class="about" style="border-style: solid; width: 61%;
+          </div>
+
+        </div>
+
+        <!-- CHILDREN SECTION -->
+
+        <div id="childrenclothes" style="display:none; width: 68%;
+    margin-left: 16%;">
+          <div class="row" style="margin-left: -2.75rem;
+        width: 114%">
+            <h2 class="title text-left">Children</h2>
+          <hr>
+            <div class="col-sm-4">
+              <div class="product-image-wrapper">
+                <div class="single-products">
+                  <div class="productinfo text-center">
+                    <img src="images/home/giacket.png" alt="" />
+
+                  </div>
+                  <div class="product-overlay">
+                    <div class="overlay-content">
+                      <h2>$56</h2>
+                      <p>sizes</p>
+                      <a href="#" class="btn btn-default add-to-cart">
+                        <i class="fa fa-shopping-cart"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="product-image-wrapper">
+                <div class="single-products">
+                  <div class="productinfo text-center">
+                    <img src="images/home/product5.jpg" alt="" />
+
+                  </div>
+                  <div class="product-overlay">
+                    <div class="overlay-content">
+                      <h2>$56</h2>
+                      <p>sizes</p>
+                      <a href="#" class="btn btn-default add-to-cart">
+                        <i class="fa fa-shopping-cart"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <img src="images/home/sale.png" class="new" alt="" />
+                </div>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="product-image-wrapper">
+                <div class="single-products">
+                  <div class="productinfo text-center">
+                    <img src="images/home/product6.jpg" alt="" />
+
+                  </div>
+                  <div class="product-overlay">
+                    <div class="overlay-content">
+                      <h2>$56</h2>
+                      <p>sizes</p>
+                      <a href="#" class="btn btn-default add-to-cart">
+                        <i class="fa fa-shopping-cart"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+    </div>
+  </div>
+
+  <!-- ABOUT SECTION-->
+
+  <div class="section">
+    <div class="section4" style="background-image:url(assets/backgrounds/about.jpg); background-size:cover; padding: 125px; width: 100%;margin-left: 0;">
+      <div class="about" style="border-style: solid; width: 61%;
    margin-left: 21%;
-   border-width: 1px;"><p align="center" >ABOUT US </p> <p align="center">This is where high-fashioned clothing is <br>
-     designed and crafted from the heart by 
-     <br>
-     an amazing team of craftsmen and 
-     <br>
-     designers who undersytand what fashion is.</p></div>
-    
- </div>
-</div>
+   border-width: 1px;">
+        <p align="center">ABOUT US </p>
+        <p align="center">This is where high-fashioned clothing is
+          <br> designed and crafted from the heart by
+          <br> an amazing team of craftsmen and
+          <br> designers who undersytand what fashion is.</p>
+      </div>
+
+    </div>
+  </div>
 
 
 
 
-<!-- this is the beginning of section 5 -->
-<div class="section">
- <div class="section 5">
-   <div style="background-color: grey; margin-top: -5%;">
-     <div class="divider"></div>
-     <p align="center" style="margin-top: -31px;"><i class="fa fa-twitter" style="color:aqua"></i>
-      SALE:Buy anything for 45% off. Use the promo CODE YOLOMY45 when you buy items."</p>
-   </div>
- </div>
-</div>
+  <!-- FOOTER HEADER SECTION -->
+
+  <div class="section">
+    <div class="section 5">
+      <div style="background-color: grey; margin-top: -5%;">
+        <div class="divider"></div>
+        <p align="center" style="margin-top: -31px;">
+          <i class="fa fa-twitter" style="color:aqua"></i>
+          SALE:Buy anything for 45% off. Use the promo CODE YOLOMY45 when you buy items."</p>
+      </div>
+    </div>
+  </div>
 
 
+  <!-- FOOTER -->
 
+  <footer>
+    <div class="section" style="margin-top: -11%; ">
+      <div class="section 6" style="background-color:grey;   text-align: center;
+   padding: 20px; width: 125%;
+   margin-left: -24%;">
+        <div style="background-color: black">
+          <div class="divider"></div>
+          <div class="row" style="margin-top: 6%; margin-left:24%; width: 68%;">
 
-<footer>
- <!-- this is the beginning of section 6 -->
- <div class="section" style="margin-top: -11%; ">
-   <div class="section 6" style="background-color:grey;   text-align: center;
-   padding: 20px; width: 148%;
-   margin-left: -24%;" >
-     <div style="background-color: black">
-       <div class="divider"></div>
-       <div class="row" style="margin-top: 10%; margin-left:17%; width: 68%;">
+            <div class="col s4">
+              <span class="white-text">YOLOMY
+                <br> WE ARE YOLOMY-WE UNDERSTAND
+                <br> FASHION AND STYLE.WE CRAFT OUR
+                <br> PRODUCTS WITH LOVE AND DILIGENCE.</span>
+            </div>
 
-         <div class="col s4"><span class="white-text" >YOLOMY <br> WE ARE YOLOMY-WE UNDERSTAND <br>
-          FASHION AND STYLE.WE CRAFT OUR <br>
-          PRODUCTS WITH LOVE AND DILIGENCE.</span>
-         </div>
+            <div class="col s4">
+              <span class="white-text">We are social
+                <br>
+                <img src="assets/social_icons/g_plus.png">
+                <img src="assets/social_icons/facebook.png">
+                <img src="assets/social_icons/you_tube.png">
+                <img src="assets/social_icons/stumble_upon.png">
+                <br>
+                <img src="assets/social_icons/skype.png">
+                <img src="assets/social_icons/flickr.png">
+                <img src="assets/social_icons/twitter_bird.png">
+                <img src="assets/social_icons/pinterest.png">
+            </div>
 
-         <div class="col s4"> <span class="white-text">We are social <br>
-           <img src="assets/social_icons/g_plus.png">
-           <img src="assets/social_icons/facebook.png">
-           <img src="assets/social_icons/you_tube.png">
-           <img src="assets/social_icons/stumble_upon.png">
-           <br>
-           <img src="assets/social_icons/skype.png">
-           <img src="assets/social_icons/flickr.png">
-           <img src="assets/social_icons/twitter_bird.png">
-           <img src="assets/social_icons/pinterest.png">
-         </div>
+            <div class="col s4">
+              <span class="white-text ">
+                CREDITS|PRIVACY|ABOUT|CONTACT
+                <br>
+                <br> Yolomy:We Mean Fashion
+              </span>
+            </div>
+          </div>
 
-         <div class="col s4">
-           <span class="white-text ">
-             CREDITS|PRIVACY|ABOUT|CONTACT<br> <br>
-             Yolomy:We Mean Fashion
-           </span>
-         </div>
-       </div>
+          <br>
+          <br>
+  </footer>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.scrollUp.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</body>
 
-<br><br>
-     </footer>
-     <!-- <script src="main.js"></script>  -->
-     <script src="js/jquery.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/jquery.scrollUp.min.js"></script>
-       <script src="js/jquery.prettyPhoto.js"></script>
-       <script src="js/main.js"></script>
-   </body>
-     </body>
-     </html>
+</html>
