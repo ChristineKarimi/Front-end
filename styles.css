@@ -4,9 +4,15 @@
 @import url(http://fonts.googleapis.com/css?family=Abel);
 
 
+.productinfo:hover {
+  background-color: grey;
+}
 
+.productinfo {
+  background-color: gainsboro;
+}
 
-.recommended_items {
+.recommended_items {                                    /*CAROSOUL STYLING*/
   overflow: hidden;
 }
 
@@ -20,7 +26,7 @@
 }
 
 .recommended-item-control i {
-  background: none repeat scroll 0 0 #FE980F;
+  background: none repeat scroll 0 0 grey;
   color: #FFFFFF;
   font-size: 20px;
   padding: 4px 10px;
@@ -30,10 +36,29 @@
   background: #ccccc6;
 }
 
-.recommended_items  h2 {
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
 }
 
+.top-right {
+  position: absolute;
+  top: 2px;
+  right: 16px;
+}
 
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 7px;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 18px;
+  left: 16px;
+}
 
 h2.title:before{
 	content: " ";
@@ -47,6 +72,13 @@ h2.title:before{
 	margin-left: -110px;
 }
 
+h2 {
+  margin-left: 22%;
+color: grey;
+font-size: 180%;
+font-weight: bold;
+}
+
 .part1{
   background-image: url(assets/backgrounds/hero.jpg);  /* HEADER BACKGROUND IMAGE */
 }
@@ -57,7 +89,7 @@ p {
 
 
 h2.title {
-  color: #FE980F;                                     /* CATEGORIES HEADING STYLING */
+  color: grey;                                     /* CATEGORIES HEADING STYLING */
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 700;
